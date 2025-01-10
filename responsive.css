@@ -1,6 +1,6 @@
 @media only screen and (max-width: 430px){
 header{
-    background-color: rgb(208, 198, 198);
+    background-color: rgb(157, 14, 14);
     position:sticky;
     top: 0;
     z-index:22; 
@@ -17,16 +17,23 @@ header{
      #Mobile-nav{
      font-size:12px;
      font-weight: 600;
-     padding: 0;
+     height: 100%;
+     width: 100vw;
+     top: 0;
+     left: 0;
      display:block;  
+     position: absolute;
+     background-color: rgb(161, 170, 178);
 
   
      }#Mobile-Obar{
         margin-left:10px;
         background-color: rgb(252, 252, 252);
         height:28PX;
+        font-size: 18px;
+        border: none;
         padding: 1px;
-        width: 26PX;
+        width: 30PX;
      }
      .Mobile-naviteam{
         background-color: rgb(255, 255, 255);
@@ -43,9 +50,10 @@ header{
         }#section1{
             height: 260px;
             width: 100vw;
-        background-image: url(Images/bb.jpg);
+        background-image: url(Images/P3.jpg);
         background-repeat: no-repeat;
         background-size:cover;
+        animation: BACK 8s infinite;
         background-position:center;
          }.Hero-box{
             height:200px;

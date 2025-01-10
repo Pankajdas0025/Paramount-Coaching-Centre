@@ -47,4 +47,9 @@
    transform: scale(1.5);
 }#quicklinks a:hover{
     color: rgb(89, 87, 86);
+}@keyframes BACK{
+    100%{background-image: url(Images/P1.jpg);}
+    25%{background-image: url(Images/P2.jpg);}
+    50%{background-image: url(Images/P3.jpg);}
+    75%{background-image: url(Images/P4.jpg);}
 }
