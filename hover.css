@@ -1,0 +1,50 @@
+@keyframes Heroshadow {
+    0%{ box-shadow: 4px 4px 20px rgb(20, 20, 20);}
+    20%{ box-shadow: 4px 4px 20px rgb(229, 4, 4);}
+    60%{ box-shadow: 4px 4px 20px rgb(16, 239, 12);filter: grayscale(100%);}
+    100%{ box-shadow: 4px 4px 20px rgb(58, 2, 242);}
+
+    
+}#CTAbutton:hover{
+    pointer-events:painted;
+        background-color: rgb(128, 233, 87);
+    
+}#know-more-btn:hover{
+      background-color: rgb(128, 233, 87); ;
+      outline: none;
+      border: none;
+      color: black;
+}@keyframes  AN{
+    /* 0%{ box-shadow: 4px 4px 20px rgb(20, 20, 20);}
+    20%{ box-shadow: 4px 4px 20px rgb(229, 4, 4);}
+    60%{ box-shadow: 4px 4px 20px rgb(16, 239, 12);filter: grayscale(100%);}
+    100%{ box-shadow: 4px 4px 20px rgb(58, 2, 242);} */
+    10%{margin-left: -1000px;}
+    50%{margin-left: -2000px;}
+    70%{margin-left: -300px;}
+    10%{margin-left: -4000px;}
+
+
+}
+@keyframes  ANM{
+    /* 0%{ box-shadow: 4px 4px 20px rgb(20, 20, 20);}
+    20%{ box-shadow: 4px 4px 20px rgb(229, 4, 4);}
+    60%{ box-shadow: 4px 4px 20px rgb(16, 239, 12);filter: grayscale(100%);}
+    100%{ box-shadow: 4px 4px 20px rgb(58, 2, 242);} */
+    10%{margin-left: -200px;}
+    50%{margin-left: -500px;}
+    70%{margin-left: -700px;}
+    10%{margin-left: -1000px;}
+
+
+}.result-slider:hover{
+    animation: none;
+}#submit:hover{
+    background-color: rgb(121, 231, 121);
+    transform: scale(1.1);
+}#lastfooter img:hover{
+    box-shadow: 2px 4px 8px black;
+   transform: scale(1.5);
+}#quicklinks a:hover{
+    color: rgb(89, 87, 86);
+}

@@ -1,0 +1,258 @@
+@media only screen and (max-width: 430px){
+header{
+    background-color: rgb(208, 198, 198);
+    position:sticky;
+    top: 0;
+    z-index:22; 
+}
+   
+     header a{
+        padding:25px;
+        padding-top: 15px;
+        font-size: 20px;
+        color: black;
+        background-color: rgb(255, 255, 255);
+        display: none;
+     }
+     #Mobile-nav{
+     font-size:12px;
+     font-weight: 600;
+     padding: 0;
+     display:block;  
+
+  
+     }#Mobile-Obar{
+        margin-left:10px;
+        background-color: rgb(252, 252, 252);
+        height:28PX;
+        padding: 1px;
+        width: 26PX;
+     }
+     .Mobile-naviteam{
+        background-color: rgb(255, 255, 255);
+        display:none; 
+        height: 180px;
+        width:100vw;
+        transition:5s;
+    
+     
+        }.Mobile-naviteam a{
+            display: block;
+            padding:5px 15px ;
+            color:black;
+        }#section1{
+            height: 260px;
+            width: 100vw;
+        background-image: url(Images/bb.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:center;
+         }.Hero-box{
+            height:200px;
+            width: 85vw;
+            display:none;
+            margin:40px 7.5vw;
+            font-size:30px;
+            padding:12px;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }#about-section{
+            height:1200px;
+            width: 100vw;
+           background-color: rgb(227, 228, 232);
+        
+        
+        }.about-text{
+            height:800px;
+            width:90vw;
+            background-color: rgb(227, 228, 232);
+            display:block;
+            margin-left: 5vw;
+            margin-top: 20px;
+    
+        }.about-heading{
+            background-color: rgb(227, 228, 232);
+            height: 80px;
+           
+        }#atittle{
+            font-weight: 600;
+            font-size: 25px;
+            padding-left:60px;
+        }.about-description{
+            background-color: rgb(227, 228, 232);
+            height: 350px;
+            font-size:20px;
+            padding:5px;
+        }#know-more-btn{
+    
+            margin-left:70px;
+            margin-bottom: 20px;
+           
+        }#Facilitie li{
+            padding:4px;
+            padding-top:5px;
+            font-size: 15px;
+            color: rgb(36, 33, 33);
+            }.about-images{
+            margin-top: 50px;
+            height:250px;
+            width:90vw;
+            margin-left: 5vw;
+            background-position: center;
+            display:block;
+        }#Courses-section{
+            height:1000px;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+        
+        }#ctittle{
+            padding-left:25px;
+            font-size: 30px;
+            font-weight: 600;
+      
+        }.Cbox{
+            height: 250px;
+           width: 90vw;
+            margin:50px 5vw;
+            background-color: rgb(255, 255, 255);
+            display:block;
+        }#Cname{
+         height: 60px;
+            width:100%;
+            background-color: rgb(208, 198, 198) ;
+            border-radius: 0;
+            /* border-radius: 0  30px 30px 0; */
+        
+           
+        }#Results-section{
+            height:400px;
+            width: 100vw;
+            background-color: rgb(0, 0, 0);
+        
+        }.result-box{
+            height:200px;
+            width:90vw;
+            margin: 50px 5vw;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        
+        }#rtitle{
+        color: rgb(255, 255, 255);
+        padding-left:20px;
+        font-size: 30px;
+        font-weight: 600;
+        }.result-slider{
+            height:200px;
+            width:400vw;
+            margin: 0;
+            animation: ANM 12s infinite ease-in-out;
+            animation-delay:2s;
+    
+        }
+        
+        .result-slider-contant{
+            height:200px;
+            width:90vw;
+            margin-top: 0;
+            margin-left: 10px;
+            background-position:left;
+            background-size: cover;
+            float: left;
+            box-shadow:4px 4px 20px black;
+            
+        }#fact-section{
+            height: 500px;
+            width: 100vw;
+            color: white;
+            background-color: #2a6b5a;
+            font-size: 30px;
+            text-align: center;
+            padding-left: 25%;
+            padding: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }#Contact-section
+        {
+            height:1500px;
+            width: 100vw;
+            background-color: rgb(255, 255, 255);
+        }.contact-box{
+            width: 95vw;
+            height: 660px;
+            margin: 50px 2.5vw;
+            display:block;
+            background-color: white;
+        
+        
+    }#Cutitle{
+        height: 50px;
+        font-size: 15px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        background-color: wheat;
+        text-align: center;
+        align-content: center;
+    }input[type="text"],input[type="email"],input[type="tel"]{
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 20px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid black;
+        font-size: 20px;
+        width: 80vw;
+    }#Msg{
+        height: 80px;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-size: 20px;
+        width: 80vw;
+    
+    }#submit{
+        height: 40px;
+        width: 140px;
+        background-color: #2a6b5a;
+        margin: 50px 70px;
+        color: white;
+    }#submitox{
+        margin: 0px 20px;
+        background-color: red;
+    }#Rdes{
+        padding-left: 45px;
+        padding-top: 5px;
+        font-size: 15px;
+    }#footer{
+        height: 1000px;
+        width: 100vw;
+        background-color: rgb(12, 9, 45);
+    }.fbox{
+        width: 90vw;
+        height: 380px;
+        margin: 20px 20px;
+        display:block;
+        float: left;
+    }#none{
+    display: none;
+    }#lastfooter{
+        align-items: center;
+        align-content: center;
+        padding-left: 25px;
+    }#quicklinks h2{
+        padding-left: 38px;
+    }
+    #quicklinks a{
+        padding-left: 38px;
+        display: block;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+    }#Copy{
+        font-size: 10px;
+        height: 30px;
+    }
+
+}
+    
