@@ -163,14 +163,14 @@ color: rgb(65, 60, 60);
 }#Results-section{
     height:700px;
     width: 100vw;
-    background-color: rgb(42, 38, 38);
+    background-color: rgb(255, 255, 255);
 
 
 }#rtitle{
     padding-left:30px;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     /* background-color: aliceblue; */
 }.result-box{
     height:500px;
