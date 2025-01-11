@@ -1,6 +1,6 @@
 @media only screen and (max-width: 430px){
 header{
-    background-color: rgb(157, 14, 14);
+    background-color:  rgb(161, 170, 178);
     position:sticky;
     top: 0;
     z-index:22; 
@@ -15,10 +15,10 @@ header{
         display: none;
      }
      #Mobile-nav{
-     font-size:12px;
+     font-size:11px;
      font-weight: 600;
      height: 100%;
-     width: 100vw;
+     width: 95vw;
      top: 0;
      left: 0;
      display:block;  
@@ -33,7 +33,7 @@ header{
         font-size: 18px;
         border: none;
         padding: 1px;
-        width: 30PX;
+        width: 28PX;
      }
      .Mobile-naviteam{
         background-color: rgb(255, 255, 255);
@@ -50,10 +50,10 @@ header{
         }#section1{
             height: 260px;
             width: 100vw;
-        background-image: url(Images/P3.jpg);
+        background-image: url(Images/bb.jpg);
         background-repeat: no-repeat;
         background-size:cover;
-        animation: BACK 8s infinite;
+        /* animation: BACK 8s infinite; */
         background-position:center;
          }.Hero-box{
             height:200px;
@@ -261,6 +261,34 @@ header{
         font-size: 10px;
         height: 30px;
     }
+    /* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+    .About-us{
+        height:200px;
+        width: 85vw;
+        margin:40px 7.5vw;
+        font-size:30px;
+        padding:12px;
+        text-shadow: 2px 2px 4px rgb(0, 0, 0);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
+    }
+
+}@media screen and (max-width:310px) and (min-width: 250px){
+
+
+    #Mobile-nav{
+        font-size:10px;
+        font-weight: 600;
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        display:block;  
+        position: absolute;
+        background-color:  rgb(161, 170, 178);
+   
+     
+        }
 
 }
     
