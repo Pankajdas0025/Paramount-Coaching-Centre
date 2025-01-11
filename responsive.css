@@ -15,7 +15,7 @@ header{
         display: none;
      }
      #Mobile-nav{
-     font-size:11px;
+     font-size:12px;
      font-weight: 600;
      height: 100%;
      width: 95vw;
@@ -26,6 +26,9 @@ header{
      background-color: rgb(161, 170, 178);
 
   
+     }     #Mobile-nav img{
+        border: 3px solid black;
+        border-radius: 50%;
      }#Mobile-Obar{
         margin-left:10px;
         background-color: rgb(252, 252, 252);
@@ -53,12 +56,12 @@ header{
         background-image: url(Images/bb.jpg);
         background-repeat: no-repeat;
         background-size:cover;
-        /* animation: BACK 8s infinite; */
+        animation: BACK 8s infinite;
         background-position:center;
          }.Hero-box{
             height:200px;
             width: 85vw;
-            display:none;
+            display:block;
             margin:40px 7.5vw;
             font-size:30px;
             padding:12px;
@@ -271,8 +274,67 @@ header{
         text-shadow: 2px 2px 4px rgb(0, 0, 0);
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        
+    }#DESABOUT{
+        height: 500px;
+        width: 100vw;
+        background-color: rgb(86, 126, 200);
+        font-size: 15px;
+        padding: 10px;
+        padding-left: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }  #Directors{
+        height: 1200px;
+        width: 100vw;
+  
+       
+    
+    }  #Directors #t{
+        padding-left: 45px;
+        font-size: 20px;
+        height: 30px;
+        background-color: aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }.aboutfbox{
+    height: 500px;
+    width: 100vw;
+    margin: 0;
+    display:block;
+    }#ft{
+        height: 30px;
+        font-size:25px;
+        padding-left: 30px;
+        font-weight: 500;
+    } #Directors h3{
+        font-size:15px;
+        padding-left: 20px;
+    }.aboutfbox img{
+        margin-left:30%;
+        height: 130px;
+        width: 130px;
+    }#Gallary{
+        height: 1200px;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }#Gallary #t{
+        padding-left: 125px;
+        font-size: 20px;
+        height: 30px;
+        background-color: aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }.gbox{
+        height:200px;
+        width: 90vw;
+        margin: 80px 2.6vw;
+        background-color: white;
+    }.gbox img{
+        margin:25px 5px;
+        height: 200px;
+        width: 90vw;
+        display: inline-block;
+        border: 14px solid rgb(241, 241, 241);
+        box-shadow: 2px 2px 10px yellow;
+    
     }
-
 }@media screen and (max-width:310px) and (min-width: 250px){
 
 
