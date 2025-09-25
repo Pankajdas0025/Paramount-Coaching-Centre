@@ -1,48 +1,41 @@
-function Toggleopen(){
-    let a=document.querySelector(".Mobile-naviteam");
-    a.style.display="block";
- 
-}
-function Toggleclose(){
-    let a=document.querySelector(".Mobile-naviteam");
-    a.style.display="none";
- 
-}function myform(){
+ // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-    var a=document.getElementById("name").value;
-    var b=document.getElementById("email").value;
-    var c=document.getElementById("phone").value;
-    var d=document.getElementById("Msg").value;
+    function openMenu(){
+      hamburger.classList.add('active');
+      hamburger.setAttribute('aria-expanded','true');
+      mobileMenu.classList.add('open');
+      mobileMenu.setAttribute('aria-hidden','false');
+    }
+    function closeMenu(){
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded','false');
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden','true');
+    }
 
-    if(a==""||b==""||c==""||d=="")
-    {
-        alert("All fields are required !!");
-    
-     
-    }
-    
-    else if(a.match(/[0-1]/))
-        {
-            alert("Numbers are not allowed to write name");
-            
-        }
-        
-        else if(c.length<10||c.match(/[a-z]/))
-    {
-        alert("Enter a valid mobile number");
-       
-    }
-    else{
-        var Objtext={
-            Name:a,
-            Email:b,
-            Mobile:c,
-            Message:d,
-        }
-var StrText=JSON.stringify(Objtext);
-localStorage.setItem(b,StrText);
-alert("✅Your Data submitted sucessfully !");
-    }
-        
-    
-}localStorage.setItem(b,StrText);
+    hamburger.addEventListener('click',()=>{
+      if(mobileMenu.classList.contains('open')) closeMenu(); else openMenu();
+    });
+
+    // Close menu when any mobile link is clicked (good UX)
+    mobileLinks.forEach(link=>{
+      link.addEventListener('click', ()=> {
+        // small timeout so link navigation feels natural on click
+        setTimeout(()=> closeMenu(), 150);
+      });
+    });
+
+    // Close mobile menu on ESC
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+    });
+
+    // Optional: close menu on resize to desktop
+    window.addEventListener('resize', ()=>{
+      if(window.innerWidth > 768 && mobileMenu.classList.contains('open')){
+        closeMenu();
+      }
+    });

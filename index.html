@@ -1,157 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
-    <link rel="stylesheet" type="text/css" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paramount Coaching Centre</title>
+  <style>
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
-    <div class="UpHead"> <marquee scrollamount="5"> &nbsp; &nbsp;<span class="glyphicon glyphicon-earphone"></span> +(91)6206996879&nbsp; &nbsp; +(91)8210791077 &nbsp;  &nbsp;  &nbsp;  &nbsp;    <span class="glyphicon glyphicon-envelope"></span> support@paramountcoachingcentre.com    </marquee></div>
-    <header> <a ><img src="Images/P3.png" height="60" width="60" style="border: 2px solid rgb(238, 237, 237); border-radius: 50%; margin-top:-10px;"></a>
-            <a style="color: rgb(240, 17, 17); font-size: 30px; pointer-events: none; text-shadow: 1px 1px 1px black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">PARAMOUNT COACHING CENTRE</a>
-            <a href="#">Home</a>
-            <a href="#about-section">About Us</a>
-            <a href="#Courses-section">Courses</a>
-            <a href="#Results-section">Results</a>
-            <a href="#Contact-section">Contact Us</a>
-            <a href="#Contact-section" style="padding-left: 120px; text-decoration: none;"><span id="CTAbutton">JOIN NOW..</span></a>
-   <span id="Mobile-nav" ><br>&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/AI (2).png" height="40" width="40">PARAMOUNT COACHING CENTRE&nbsp;<button id="Mobile-Obar" onclick="Toggleopen()"> &#9776; </button></span>
-        </header>
-        <div class="Mobile-naviteam animate__animated animate__backInLeft animate__repeat-1">
 
-            <a href="index.html">Home</a>
-            <a href="#about-section">About Us</a>
-            <a href="#Courses-section">Courses</a>
-            <a href="#Results-section">Results</a>
-            <a href="#Contact-section">Contact Us</a>
-            <a onclick="Toggleclose()" style="background-color: rgb(226, 53, 18); text-align: center;">Close</a>
-        </div>
-        <section id="section1" class="animate__animated animate__rotateIn animate__repeat-1">
-<div class="Hero-box">     &nbsp; &nbsp;!! आपकी तैयारी  !!   हमारी जिम्मेदारी !!
-<hr size="10" width="80%" color="black"/></div>
-        </section>
-
-
-        <section id="about-section" class="animate__animated animate__flash animate__repeat-1"><br>
-    <div class="about-text">
-        <div class="about-heading">
-                <h4 id="atittle">💡 ABOUT</h4>
-                <!-- <h1 id="atag">!! Your Prepration Our responsibility !!</h1> -->
-         </div>
-                 <div class="about-description">
-                    At Paramount Coaching, we specialize in transforming ordinary efforts into extraordinary results. Catering to students of classes 5th to 12th, our innovative teaching methods, engaging study materials, and result-oriented approach ensure students are always a step ahead—academically and personally!
-                 </div>
-                 <br>
-                <a href="about.html"><button id="know-more-btn">know more..</button></a>
-                 <h3>Why Join Paramount Coaching?</h3>
-                 <ul id="Facilitie">
-                    <li>✅Expert Faculty</li>
-                    <li>✅Comprehensive Study Material</li>
-                    <li>✅Small Batch Sizes</li>
-                    <li>✅Doubt Clearance Sessions</li>
-                    <li>✅Safe & Conducive Environment</li>
-                    <li>✅Affordable Fee Structure</li>
-                 </ul>
-</div>
-
-
-    <div class="about-images animate__animated animate__backInLeft animate__repeat-1" >
-      <!-- <img src="Images/IM.png" height="550" width="580"> -->
+  <!-- Header -->
+  <header>
+    <div class="brand">
+      <img src="assets/Images/AA.jpg" alt="logo" style="width:44px;height:44px;border-radius:8px;object-fit:cover;">
+      <h1>Paramount Coaching Centre</h1>
     </div>
-        </section>
-        <section id="Courses-section" class="animate__animated animate__flash animate__repeat-1">
-    <div class="course-heading">
-            <h4 id="ctittle">🎯OUR COURSES</h4>
-     </div>
-     <br>
-     <div class="Cbox" id="Cbox1"><h3 id="Cname">5th - 8th <p>BSEB & CBSE (all subjects)</p></h3></div>
-     <div class="Cbox" id="Cbox2"><h3 id="Cname">9th - 10th <p>BSEB & CBSE (all subjects)</h3></div>
-     <div class="Cbox" id="Cbox3"><h3 id="Cname">11th - 12th <p>BSEB (Arts)</p></h3></div>
 
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav" aria-label="Main Navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#results">Results</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-    </section>
-    <section id="Results-section" class="animate__animated animate__rotateIn animate__repeat-1">
-        <div class="course-heading">
-            <h4 id="rtitle">🥇 OUR RESULTS</h4>
-    </div>   <!--  <button id="slider-btnl"><span class="glyphicon glyphicon-circle-arrow-right"></span></button> <button id="slider-btnr"><span class="glyphicon glyphicon-circle-arrow-left"></span></button> -->
-    <div class="result-box">
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+  </header>
 
-        <div class="result-slider">
-            <div class="result-slider-contant"><img src="Images/R1.jpg" height="100%" width="100%"></div>
-            <div class="result-slider-contant"><img src="Images/R2.jpg" height="100%" width="100%"></div>
-            <div class="result-slider-contant"><img src="Images/R3.jpg" height="100%" width="100%"></div>
-            <div class="result-slider-contant"><img src="Images/R1.jpg" height="100%" width="100%"></div>
-        </div>
-    </div>
-</section><br>
-<br>
-<section id="fact-section" class="animate__animated animate__backInLeft animate__repeat-1">
-    "Join Paramount Coaching and secure the path to academic success and beyond!"
-
-</section>
-<section id="Announcement"><marquee scrollamount="15">📢 Announcement: New Batches Starting from 5th February!</marquee>
-</section>
-<section id="Contact-section" class="animate__animated animate__backInDown animate__repeat-1">
-
-  <div class="contact-box">
-    <h1 id="Cutitle">Have Any Questions? We’re Here to Help!</h1>
-    <br><form onsubmit="myform()">
-        <input type="text" id="name" name="username" placeholder="Enter your Name here.." ><br>
-        <input type="email" id="email" name="useremail" placeholder="Enter your Email here..">
-        <br>
-        <input type="tel" id="phone" name="usernumber" placeholder="Phone" maxlength="10">
-        <br>
-        <textarea id="Msg" placeholder="Message..." minlength="20"></textarea>
-        <br>
-        <input type="submit"id="submit" name="submitform" value="SUBMIT">
-    </form>
-    <h4 id="submitox">✅Your Data submitted </h4>
-
-
+  <!-- Mobile slide-down menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#results" class="mobile-link">Results</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="cta">Join Now</a>
   </div>
-  <div class="contact-box"> <h1 id="Cutitle">Reach to us</h1>
-    <h4 id="Rdes">we are committed to guiding students towards academic excellence. Whether you have questions about our courses, want to know more about batch timings, or simply need advice for your child’s education, we’re always here to assist.
 
-</h4>
-<h3>📍 Our Address:</h3>
-<p>Teacher's colony (Behind the Police station)<br>
-Bahadurganj, kishanganj(855101)</p>
-<h3>📞 Call Us:</h3>
-<p>+91 62096996879  | +91 8210791077</p>
-<h3>📧 Email:</h3>
-<p>Support@paramountcoachingcentre.com</p>
-<h3>💬 WhatsApp:</h3>
-<p>+91 62096996879  | +91 8210791077</p>
-<h3>⏰ Office Hours:</h3>
-<p>7:00AM to 11:00AM</p>
-</section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div>
+      <h1>आपकी तैयारी हमारी जिम्मेदारी</h1>
+      <h2>Shaping Bright Futures</h2>
+      <p>Quality education for Classes 5–8, 9–10, and Intermediate students</p>
+      <button class="btn">Join Now</button>
+    </div>
+  </section>
 
-<br>
-<section id="footer" class="animate__animated animate__backInRight animate__repeat-1">
-    <div class="fbox" id="lastfooter"><br><h2>PARAMOUNT COACHING CENTRE</h2>
-<h3>Our Mission:</h3>
-<h5>Our mission is to empower students with the knowledge and skills necessary to succeed in their academic and professional endeavors. At Paramount Coaching, we believe in fostering a strong learning environment that promotes holistic development</h5>
-<h4>Connect with social Platforms-</h4>
-<a href="https://www.facebook.com/profile.php?id=100089487352635&mibextid=ZbWKwL"><img src="Images/Facebook logo.png" height="30" width="30"></a> &nbsp;<img src="Images/Instagram logo.png" height="30" width="30"> &nbsp;<img src="Images/Linkedin logo.png" height="30" width="30"></div>
+  <!-- About -->
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title">About Us</h2>
+    <div class="about">
+      <div>
+        <p>Paramount Coaching Centre enthu students ke liye ek supportive aur result-oriented environment provide karta hai.
+          Hum 5th se Intermediate tak students ko conceptual clarity, doubt clearing sessions aur exam-focused practice dete hain. Experienced teachers aur personalised attention hamari khasiyat hai.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1596495578065-10c9d6c5a07d?auto=format&fit=crop&w=800&q=80" alt="Classroom">
+    </div>
+  </section>
 
-  <div class="fbox" id="none"></div>
-    <div class="fbox" id="quicklinks"><h2>Quick links</h2>
-        <a href="#">Home</a>
-        <a href="#about-section">About Us</a>
-        <a href="#Courses-section">Courses</a>
-        <a href="#Results-section">Results</a>
-        <a href="#Contact-section">Contact Us</a></div>
+  <!-- Results -->
+  <section id="results" aria-labelledby="results-title">
+    <h2 id="results-title" class="section-title">Our Results</h2>
+    <div class="results">
+      <div class="card"><h3>Topper 2024</h3><p>Pankaj Kumar Das</p><small></small><p>95% in Class 10 Board Exams</p></div>
+      <div class="card"><h3>Topper 2023</h3><p>98% in Class 12 Board Exams</p></div>
+      <div class="card"><h3>Consistent Growth</h3><p>Over 500+ students with 90%+ scores</p></div>
+    </div>
+  </section>
 
-</section><br>
-<section id="Copy">Copyright © 2024 Paramount Coaching Centre, All rights reserved.</section>
+  <!-- Gallery -->
+  <section id="gallery" aria-labelledby="gallery-title">
+    <h2 id="gallery-title" class="section-title">Gallery</h2>
+    <div class="gallery">
+      <img src="assets/Images/picture1.jpg" alt="Students">
+      <img src="assets/Images/picture2.jpg" alt="Classroom">
+      <img src="assets/Images/picture3.jpg" alt="Library">
+      <img src="assets/Images/picture4.jpg" alt="Coaching">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="section-title">Contact Us</h2>
+    <div class="contact">
+      <div class="contact-info">
+        <h3>Address</h3>
+        <p>Paramount Coaching Centre, Near XYZ Chowk, Your City</p>
+        <h3>Phone</h3>
+        <p>+91 9876543210</p>
+        <h3>Email</h3>
+        <p>info@paramountcoaching.com</p>
+     </div>
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- google map -->
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3300.1325392282574!2d87.80675000000001!3d26.20302779999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e56d0019f035d7%3A0x1052fcf4a28dd395!2zUEFOS0FKJ1MgSE9NRfCfj6A!5e1!3m2!1sen!2sin!4v1758811943426!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer>
+    <p>&copy; 2025 Paramount Coaching Centre | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
