@@ -1,2 +1,2 @@
 # Paramount-Coaching-Centre
-A educational website 
+A educational website for coaching centre
