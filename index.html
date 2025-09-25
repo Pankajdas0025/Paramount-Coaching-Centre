@@ -58,9 +58,11 @@
     <div class="about">
       <div>
         <p>Paramount Coaching Centre enthu students ke liye ek supportive aur result-oriented environment provide karta hai.
-          Hum 5th se Intermediate tak students ko conceptual clarity, doubt clearing sessions aur exam-focused practice dete hain. Experienced teachers aur personalised attention hamari khasiyat hai.</p>
+          Hum 5th se Intermediate tak students ko conceptual clarity, doubt clearing sessions aur exam-focused practice dete hain. Experienced teachers aur personalised attention hamari khasiyat hai.
+        </p>
+        <button class="btn">Explore</button>
       </div>
-      <img src="https://images.unsplash.com/photo-1596495578065-10c9d6c5a07d?auto=format&fit=crop&w=800&q=80" alt="Classroom">
+      <img src="assets/Images/picture2.jpg" alt="Classroom">
     </div>
   </section>
 
@@ -74,16 +76,55 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" aria-labelledby="gallery-title">
-    <h2 id="gallery-title" class="section-title">Gallery</h2>
-    <div class="gallery">
+<!-- Study Material Section -->
+<section id="materials" aria-labelledby="materials-title">
+  <h2 id="materials-title" class="section-title">BSEB 10th Previous Year Papers</h2>
+  <div class="accordion">
+    <!-- 2025 Papers -->
+    <div class="accordion-item">
+      <button class="accordion-header">📂 2025 Question Papers</button>
+      <div class="accordion-content">
+        <a href="downloads/bseb-10th-2025-math.pdf" download>Download</a>
+      </div>
+    </div>
+
+    <!-- 2024 Papers -->
+    <div class="accordion-item">
+      <button class="accordion-header">📂 2024 Question Papers</button>
+      <div class="accordion-content">
+         <a href="downloads/bseb-10th-2025-math.pdf" download>Download</a>
+      </div>
+    </div>
+
+    <!-- 2023 Papers -->
+    <div class="accordion-item">
+      <button class="accordion-header">📂 2023 Question Papers</button>
+      <div class="accordion-content">
+      <a href="downloads/bseb-10th-2025-math.pdf" download>Download</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Gallery Carousel -->
+<section id="gallery" aria-labelledby="gallery-title">
+  <h2 id="gallery-title" class="section-title">Gallery</h2>
+
+  <div class="carousel">
+    <div class="carousel-track">
       <img src="assets/Images/picture1.jpg" alt="Students">
       <img src="assets/Images/picture2.jpg" alt="Classroom">
       <img src="assets/Images/picture3.jpg" alt="Library">
       <img src="assets/Images/picture4.jpg" alt="Coaching">
     </div>
-  </section>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
 
   <!-- Contact -->
   <section id="contact" aria-labelledby="contact-title">
@@ -103,7 +144,7 @@
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
           <textarea rows="5" placeholder="Your Message"></textarea>
-          <button type="submit">Send</button>
+          <button type="submit" class="btn">Send</button>
         </form>
       </div>
     </div>
