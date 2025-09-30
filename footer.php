@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
       <footer class="footer container" id="footer">
@@ -35,7 +35,7 @@
     </div>
 
 <a href="https://wa.me/9155726625?text=Hi%20I%20found%20you%20on%20your%20Portfolio%20website!"><button id="whatsappbtn"><img src="assets/images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button></a>
-<a href="https://buymeacoffee.com/pankajkuma7"><button id="movebtn"> <img src="assets/images/Buy-me-coffee.png" alt="Scrolltotop-Image"></button></a>
+<a href="https://buymeacoffee.com/pankajkuma7"><button id="movebtn"> <img src="assets/images/Scrolltotop.png" alt="Scrolltotop-Image"></button></a>
   </footer>
 </body>
 </html>

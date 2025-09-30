@@ -201,6 +201,81 @@
 
     footer{background:#004080;color:#fff;padding:18px;text-align:center;margin-top:10px}
 
+
+/* Footer */
+#footer {
+
+  display: flex;
+  flex-direction:row;
+  height: 400px;
+  margin: 2rem auto 5rem;
+  padding: 1rem;
+  background-color:var(--bg-secondary);
+  color: var(--text-color-two);
+}
+.footer-div
+{
+  width: 30%;
+  margin: 0 1.66%;
+    text-align: left;
+}.footer-div h2
+{
+
+  padding: 10px 20px;
+
+}
+
+
+.footer-div a
+{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: var(--text-color-two);
+}.footer-div a:hover
+{
+  text-decoration: underline;
+  transform: translateX(15px);
+}
+
+
+
+/* buttons */
+#whatsappbtn
+{
+background-color: transparent;
+  position:fixed;
+  top: 85%;
+  left:4%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+ font-weight: bolder;
+  display:block;
+  border-radius: 50%;
+  border:var(--border);
+}#whatsappbtn img{
+  height: 57px;
+  width: 57px;
+}#movebtn
+{
+background-color: transparent;
+  position:fixed;
+  top: 85.0%;
+  left:90%;
+  height:60px;
+  width:60px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  display:block;
+  border:var(--border);
+  border-radius: 50%;
+  padding:3.5px;
+}#movebtn img{
+  height:50px;
+  width:50px;
+}
+
     /* Responsive rules */
     @media(max-width:900px){
       .about{grid-template-columns:1fr;}
@@ -226,6 +301,42 @@ body{padding: 0;}
   border-radius: 0;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+/* Footer */
+#footer {
+
+  display:block;
+  flex-direction:row;
+  height:auto;
+  margin: 2rem auto 5rem;
+  padding: 1rem;
+}
+.footer-div
+{
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}.footer-div h2
+{
+
+  padding: 10px 20px;
+
+}
+
+
+.footer-div a
+{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+
+}
+
+#movebtn
+{
+
+  left:80%;
+
 }
    }
 
