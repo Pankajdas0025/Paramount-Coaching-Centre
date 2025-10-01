@@ -12,10 +12,11 @@
 html
 {
   scroll-behavior: smooth;
+  transition: 0.5s;
 }
   /* Basic reset */
     *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-    body{background:#ebeecc;color:#222;line-height:1.6; padding: 20px 10px;scroll-behavior: smooth;}
+    body{background:#f0f0e5;color:#222;line-height:1.6; padding: 20px 10px;scroll-behavior: smooth;}
 
     /* Header */
     header{

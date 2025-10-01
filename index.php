@@ -14,7 +14,7 @@
   <header>
     <div class="brand">
       <img src="assets/Images/Hero-image.jpg" alt="logo" style="width:44px;height:44px;border-radius:8px;object-fit:cover;">
-      <h1>Paramount Coaching Centre</h1>
+      <h1>XYZ Coaching Centre</h1>
     </div>
 
     <!-- Desktop Nav -->
