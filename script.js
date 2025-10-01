@@ -86,3 +86,26 @@
   // Auto-slide every 4s
   setInterval(() => showSlide(index + 1), 4000);
 
+
+
+
+
+// scroll to top web..........................
+document.addEventListener("DOMContentLoaded", function() {
+  let mybutton = document.getElementById("movebtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (!mybutton) return;
+    if (document.body.scrollTop >100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  window.movetopFun = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+});

@@ -35,7 +35,31 @@
     </div>
 
 <a href="https://wa.me/9155726625?text=Hi%20I%20found%20you%20on%20your%20Portfolio%20website!"><button id="whatsappbtn"><img src="assets/images/whatsapp-logo.png" aria-label="whatsapp-logo Image"></button></a>
-<a href="https://buymeacoffee.com/pankajkuma7"><button id="movebtn"> <img src="assets/images/Scrolltotop.png" alt="Scrolltotop-Image"></button></a>
+<a href="#"><button id="movebtn"> <img src="assets/images/Scrolltotop.png" alt="Scrolltotop-Image"></button></a>
   </footer>
+  <script>
+
+// scroll to top web..........................
+document.addEventListener("DOMContentLoaded", function() {
+  let mybutton = document.getElementById("movebtn");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (!mybutton) return;
+    if (document.body.scrollTop >700 || document.documentElement.scrollTop >700) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  window.movetopFun = function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+});
+
+
+  </script>
 </body>
 </html>
