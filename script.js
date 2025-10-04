@@ -1,111 +1,133 @@
- // Hamburger toggle
+ AOS.init({once:true, duration:700});
+
+    /* Mobile menu toggle */
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    function openMenu(){
-      hamburger.classList.add('active');
-      hamburger.setAttribute('aria-expanded','true');
-      mobileMenu.classList.add('open');
-      mobileMenu.setAttribute('aria-hidden','false');
-    }
-    function closeMenu(){
-      hamburger.classList.remove('active');
-      hamburger.setAttribute('aria-expanded','false');
-      mobileMenu.classList.remove('open');
-      mobileMenu.setAttribute('aria-hidden','true');
-    }
-
-    hamburger.addEventListener('click',()=>{
-      if(mobileMenu.classList.contains('open')) closeMenu(); else openMenu();
+    hamburger && hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
     });
 
-    // Close menu when any mobile link is clicked (good UX)
-    mobileLinks.forEach(link=>{
-      link.addEventListener('click', ()=> {
-        // small timeout so link navigation feels natural on click
-        setTimeout(()=> closeMenu(), 150);
+
+    /* Top button */
+    document.getElementById('topBtn').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+    /* Simple enroll/bookDemo handlers */
+    function enroll(plan){
+      alert('Thanks — you selected: ' + plan + '. Our team will contact you soon.');
+    }
+    function bookDemo(){
+      document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+      // optional: focus on message field
+      const textarea = document.querySelector('#contactForm textarea');
+      textarea && textarea.focus();
+    }
+
+    /* Testimonials sliding (basic) */
+    const track = document.getElementById('test-track');
+    const prevBtn = document.getElementById('prevTest');
+    const nextBtn = document.getElementById('nextTest');
+    let index = 0;
+    function updateTestPosition() {
+      // find width of first item (fallback)
+      const item = track.querySelector('.test-item');
+      const w = item ? item.offsetWidth + 16 /* gap */ : 320;
+      track.style.transform = `translateX(-${index * w}px)`;
+    }
+    nextBtn && nextBtn.addEventListener('click', ()=> {
+      const items = track.querySelectorAll('.test-item').length;
+      index = Math.min(items-1, index+1);
+      updateTestPosition();
+    });
+    prevBtn && prevBtn.addEventListener('click', ()=> {
+      index = Math.max(0, index-1);
+      updateTestPosition();
+    });
+    window.addEventListener('resize', updateTestPosition);
+
+    /* Accordion behavior */
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const expanded = header.getAttribute('aria-expanded') === 'true';
+        header.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        const content = header.nextElementSibling;
+        if(!content) return;
+        if(expanded){
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
       });
     });
 
-    // Close mobile menu on ESC
-    document.addEventListener('keydown', (e)=>{
-      if(e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+
+
+
+
+
+    // Keep loader for 3 seconds, then hide
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        document.getElementById("loading-screen").classList.add("hidden");
+      },3000); // 3000ms = 3 seconds
     });
 
-    // Optional: close menu on resize to desktop
-    window.addEventListener('resize', ()=>{
-      if(window.innerWidth > 768 && mobileMenu.classList.contains('open')){
-        closeMenu();
+
+
+// contact from validation....................................................
+
+    const Errorsms = document.getElementById('Error');
+     Errorsms.style.color = "red";
+
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const mobInput = document.getElementById('telphone');
+    const smsInput = document.getElementById('message');
+
+
+    function Check_Name() {
+      const name = nameInput.value.trim();
+      if (!/^[a-zA-Z\s]{4,}$/.test(name)) {
+        Errorsms.innerHTML = "Please enter a valid name (letters only, min 4 characters).";
+        nameInput.style.color = "red";
+        setTimeout(() => {
+          Errorsms.innerHTML = "";
+          nameInput.value = "";
+          nameInput.style.color = "black";
+        }, 3000);
+      } else {
+        Errorsms.innerHTML = "";
       }
-    });
-
-
-
-
-
-
-
-
-// Previous year Question
-
-  const headers = document.querySelectorAll(".accordion-header");
-  headers.forEach(header => {
-    header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
-      content.style.display = content.style.display === "block" ? "none" : "block";
-    });
-  });
-
-
-
-
-
-
-
-
-// For Caresoul Effects
-
-
-  const track = document.querySelector(".carousel-track");
-  const slides = document.querySelectorAll(".carousel-track img");
-  const prevBtn = document.querySelector(".carousel-btn.prev");
-  const nextBtn = document.querySelector(".carousel-btn.next");
-
-  let index = 0;
-
-  function showSlide(i) {
-    index = (i + slides.length) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  // Buttons
-  prevBtn.addEventListener("click", () => showSlide(index - 1));
-  nextBtn.addEventListener("click", () => showSlide(index + 1));
-
-  // Auto-slide every 4s
-  setInterval(() => showSlide(index + 1), 4000);
-
-
-
-
-
-// scroll to top web..........................
-document.addEventListener("DOMContentLoaded", function() {
-  let mybutton = document.getElementById("movebtn");
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
-    if (!mybutton) return;
-    if (document.body.scrollTop >100 || document.documentElement.scrollTop > 100) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
     }
-  }
-  window.movetopFun = function() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-});
+
+    function Check_Email() {
+      const email = emailInput.value.trim();
+      if (!/^\S+@\S+\.\S+$/.test(email)) {
+        Errorsms.innerHTML = "Please enter a valid email address.";
+        emailInput.style.color = "red";
+        setTimeout(() => {
+          Errorsms.innerHTML = "";
+          emailInput.value = "";
+          emailInput.style.color = "black";
+        }, 3000);
+      } else {
+        Errorsms.innerHTML = "";
+      }
+    }
+
+    function Check_Mob() {
+      const mobile = mobInput.value.trim();
+      if (!/^\d{10}$/.test(mobile)) {
+        Errorsms.innerHTML = "Mobile number must be exactly 10 digits.";
+        mobInput.style.color = "red";
+        setTimeout(() => {
+          Errorsms.innerHTML = "";
+          mobInput.value = "";
+          mobInput.style.color = "black";
+        }, 3000);
+      } else {
+        Errorsms.innerHTML = "";
+      }
+    }
