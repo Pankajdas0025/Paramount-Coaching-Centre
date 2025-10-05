@@ -77,10 +77,8 @@
 
 
 // contact from validation....................................................
-
     const Errorsms = document.getElementById('Error');
-     Errorsms.style.color = "red";
-
+    Errorsms.style.color = "red";
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const mobInput = document.getElementById('telphone');
