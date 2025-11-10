@@ -157,7 +157,7 @@
   <main id="home" class="hero" role="main">
     <div class="hero-inner">
       <div data-aos="fade-right">
-        <h2>Shaping Bright Futures — <span style="color:var(--accent)">ABC Coaching Centre</span></h2>
+        <h2>आपकी तैयारी हमारी जिम्मेदारी<span style="color:var(--accent)">ABC Coaching Centre</span></h2>
         <p>Comprehensive study materials, structured classroom & online coaching, test series, and mentorship for school & competitive exams.</p>
         <div class="cta-row">
           <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enroll Now</button>

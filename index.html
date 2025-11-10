@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABC Coaching Centre — Shaping Bright Futures</title>
+  <meta name="description" content="ABC Coaching Centre: Classroom & online coaching, practice tests, study materials, mentorship, and crash courses for school & competitive exams." />
+  <meta name="keywords" content="coaching, tuition, study material, test series, demo class, competitive exam coaching" />
+  <meta name="author" content="ABC Coaching Centre" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  <style>
+ .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  animation: pulseShadow 2s infinite;
+}
+.whatsapp-float i {line-height: 60px;}
+
+/* Hover Animation */
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Keyframe for Pulsing Shadow Animation */
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Footer */
+
+body , html{
+  padding: 0;
+  margin: 0;
+
+}
+#include-footer {
+
+  display: flex;
+  flex-direction:row;
+  height: 400px;
+  margin:0;
+  padding: 1rem;
+  background-color:#004080;
+  width: 100vw;
+  height: auto;
+}
+.footer-div
+{
+  width: 30%;
+  margin: 0 1.66%;
+  text-align: left;
+}.footer-div h2
+{
+  padding: 10px 20px;
+  color: white;
+}
+.footer-div a
+{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color:white;
+  font-weight: 600;
+}.footer-div a:hover
+{
+  text-decoration: underline;
+  transform: translateX(1px);
+}#All-reserved
+
+{
+  width: 100%;
+ height: 10vh;
+  background-color:black;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 15px 25px ;
+  text-align: center;
+
+}
+
+  @media(max-width:600px)
+{
+/* Footer */
+#include-footer {
+
+  display:block;
+  position: absolute;
+  height:auto;
+  margin:0rem;
+  left: 0;
+  padding: 1rem;
+}
+.footer-div
+{
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}.footer-div h2
+{
+  padding: 10px 20px;
+}
+.footer-div a
+{
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+
+}.footer-div p
+{
+color: white;
+}}
+/* footer style end Here */
+
+
+  /* Full screen loader background */
+  #loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    flex-direction: column;
+  }
+  /* Hide smoothly */
+  #loading-screen.hidden {opacity: 0;visibility: hidden;}
+  /* Loader wrapper */
+  .loader {width: 120px;height: 220px;position: relative; display: flex; flex-direction: column;}
+
+  /* Pulse rings */
+  .loader::before,
+  .loader::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid transparent;
+    border-top-color: #004080;
+    border-bottom-color: #ffd700;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  .loader::after {
+    border-top-color: #ff4500;
+    border-bottom-color: #1e90ff;
+    animation-delay: 0.75s;
+  }
+
+  /* Logo in center */
+  .loader img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoScale 1.5s ease-in-out infinite;
+  }
+
+  /* Animations */
+  @keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes logoScale {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+  }
+
+  /* Optional loader text */
+  .loader-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #004080;
+    animation: fadeText 1.5s ease-in-out infinite;
+  }
+
+  @keyframes fadeText {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+</style>
+</head>
+<body>
+  <!-- Splash Screen Loader -->
+<div id="loading-screen">
+  <div class="loader">
+
+    <div class="loader-text">Loading...</div>
+     <img src="assets/Images/Hero-image.jpg" alt="Logo">
+  </div>
+
+</div>
+
+ <!-- Splash Screen Loader -->
+
+  <header>
+    <div class="brand container" style="display:flex;align-items:center;justify-content:flex-start;padding:0;">
+      <img src="assets/Images/Navy Gold Modern Circle Class Logo (1).png" alt="logo" style="width:80px;height:80px;border-radius:8px;object-fit:cover;">
+      <h1 style="margin-left:8px">Paramount Coaching Centre</h1>
+    </div>
+
+    <nav class="desktop-nav" aria-label="Main Navigation">
+  <a href="#home"><i class="fas fa-house"></i> Home</a>
+  <a href="#about"><i class="fas fa-user-graduate"></i> About</a>
+  <a href="#results"><i class="fas fa-chart-line"></i> Results</a>
+  <a href="#materials"><i class="fas fa-book-open"></i> Materials</a>
+  <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="container" style="padding:0;">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#results" class="mobile-link">Results</a>
+      <a href="#materials" class="mobile-link">Materials</a>
+      <a href="#gallery" class="mobile-link">Gallery</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="cta">Join Now</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main id="home" class="hero" role="main">
+    <div class="hero-inner">
+      <div data-aos="fade-right">
+        <h2>आपकी तैयारी ! हमारी जिम्मेदारी ! <br>
+        <span style="color:var(--accent)">पैरामाउंट परिवार</span></h2>
+        <p>Providing comprehensive study materials, expert classroom teaching, regular test series, and dedicated mentorship exclusively for Class 10th & 12th (BSEB) students. Our structured offline programs ensure strong fundamentals, exam readiness, and top board results.</p>
+        <div class="cta-row">
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
+          <button class="btn-outline" onclick="bookDemo()">Book Demo Class</button>
+        </div>
+      </div>
+
+      <aside class="hero-card center" data-aos="fade-left" aria-label="Quick info">
+        <div style="text-align: left; background-color: #fbfaf6; min-width:100%; padding: 5px;">
+          <strong>📢 Upcoming Batches</strong>
+          <ul class="small muted" style="margin-top:8px ; list-style: none; text-align: left;padding: 0;">
+            <li>Class 9-10 | Morning & Evening</li>
+            <li>Class 11-12 (Science & Commerce)</li>
+            <li>Crash Course - Board Exams</li>
+          </ul>
+          <strong>👉Contact</strong>
+          <ul style="padding: 0;">
+             <div class="small muted">Thana road , Bahadurganj</div>
+            <div class="small muted">+91 9155726625</div>
+            <div class="small muted">paramount@gmail.com</div>
+
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- WHY CHOOSE US -->
+  <section aria-labelledby="why-title" class="section" id="about">
+    <div class="container">
+      <h3 id="why-title" class="section-title" data-aos="fade-up">Why Choose Paramount Coaching?</h3>
+      <p class="section-sub" data-aos="fade-up">We combine experienced teachers, small batches, focused test series, and personalized mentoring to ensure every student achieves their best.</p>
+
+      <div class="grid grid-3" style="margin-top:24px" data-aos="fade-up">
+        <div class="why-card">
+          <h4>Expert Teachers</h4>
+          <p class="small muted">Qualified faculty with years of teaching & exam experience. Concept-first approach for lasting understanding.</p>
+        </div>
+        <div class="why-card">
+          <h4>Structured Study Material</h4>
+          <p class="small muted">Concise notes, chapter-wise practice sheets & previous-year solved papers for quick revision.</p>
+        </div>
+        <div class="why-card">
+          <h4>Regular Tests & Feedback</h4>
+          <p class="small muted">Weekly tests, detailed answer discussions and one-on-one feedback to correct mistakes early.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- (Other sections kept same structure) -->
+  <!-- HOW IT WORKS -->
+  <section aria-labelledby="how-title" class="section" style="background:transparent">
+    <div class="container">
+      <h3 id="how-title" class="section-title" data-aos="fade-up">How It Works</h3>
+      <p class="section-sub" data-aos="fade-up">Simple 4-step process to join a batch or take services.</p>
+      <div class="steps" style="margin-top:22px">
+        <div class="step" data-aos="fade-up" data-aos-delay="50">
+          <div class="num">1</div>
+          <h4>Choose Program</h4>
+          <p class="small muted">Pick the course or program you want (school, board, or competitive).</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="num">2</div>
+          <h4>Book Demo / Enroll</h4>
+          <p class="small muted">Attend a free demo or directly enroll offline.</p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="150">
+          <div class="num">3</div>
+         <h4>Join Classes</h4>
+<p class="small muted">Attend expert sessions, get notes, and take regular tests.</p>
+
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="num">4</div>
+          <h4>Performance Review</h4>
+          <p class="small muted">Get periodic reviews & mentorship for continuous improvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" aria-labelledby="programs-title" class="section">
+    <div class="container">
+      <h3 id="programs-title" class="section-title" data-aos="fade-up">Programs We Offer</h3>
+      <p class="section-sub" data-aos="fade-up">Tailored courses for different needs — choose what fits you best.</p>
+      <div class="programs" style="margin-top:22px" data-aos="fade-up">
+        <article class="card">
+          <h4>Nursery to 5th </h4>
+          <p class="small muted">Core concepts, chapter tests, and doubt-clearing sessions designed for strong fundamentals.</p>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('School Coaching')">Enroll</button></div>
+        </article>
+
+            <article class="card">
+            <h4>Class 5th-10th</h4>
+            <p class="small muted">Strong foundation classes with concept-based learning and regular tests for BSEB students.</p>
+            <div style="margin-top:12px">
+            <button class="btn" onclick="enroll('Class 5th-10th')">Enroll</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <h4>Intermediate (Class 11-12)</h4>
+            <p class="small muted">BSEB-focused coaching with in-depth subject guidance and regular test practice for board success.</p>
+            <div style="margin-top:12px">
+            <button class="btn" onclick="enroll('Intermediate')">Enroll</button>
+            </div>
+            </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section id="materials" aria-labelledby="materials-title" class="section">
+    <div class="container">
+      <h3 id="materials-title" class="section-title" data-aos="fade-up">Study Materials & Downloads</h3>
+      <p class="section-sub" data-aos="fade-up">Prepared by teachers — concise notes, solved papers & practice worksheets.</p>
+      <div class="grid" style="margin-top:18px;grid-template-columns:repeat(3,1fr);">
+        <div class="card" data-aos="fade-up">
+          <h4>BSEB 10th — Previous Year Papers</h4>
+          <p class="small muted">Download topic-wise solved papers for quick revision.</p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/math.pdf" download class="small">Download <i class="fas fa-download"></i></a></p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+          <h4>Revision Notes — Physics</h4>
+          <p class="small muted">Short & to-the-point revision sheets for every chapter.</p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/physics.pdf" class="small">Download <i class="fas fa-download"></i></a></p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <h4>Question Bank — Mathematics</h4>
+          <p class="small muted">Practice hundreds of quality questions with solutions.</p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/math.pdf" class="small">Download <i class="fas fa-download"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Auto Scrolling Gallery -->
+  <section class="scroll-gallery"  id="gallery">
+    <div class="scroll-track">
+<!-- Educational Image Gallery -->
+<!-- Same images twice for infinite loop effect -->
+<img src="assets/Images/picture1.jpg" alt="Books and Study Materials">
+<img src="assets/Images/picture2.jpg" alt="Students Studying Together">
+<img src="assets/Images/picture3.jpg" alt="Classroom Learning">
+<img src="assets/Images/picture4.jpg" alt="Books and Study Materials">
+
+
+<!-- Duplicate for smooth infinite effect -->
+<img src="assets/Images/picture1.jpg" alt="Books and Study Materials">
+<img src="assets/Images/picture2.jpg" alt="Students Studying Together">
+<img src="assets/Images/picture3.jpg" alt="Classroom Learning">
+<img src="assets/Images/picture4.jpg" alt="Books and Study Materials">
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" aria-labelledby="pricing-title" class="section">
+    <div class="container">
+      <h3 id="pricing-title" class="section-title" data-aos="fade-up">Fee Structure & Packages</h3>
+      <p class="section-sub" data-aos="fade-up">Flexible packages for every learner. Contact for exact fee details & discounts.</p>
+      <div class="pricing-grid" style="margin-top:20px" data-aos="fade-up">
+        <div class="price-card">
+          <h4>Nursery to 5th </h4>
+          <div class="price-amount">₹199 / month</div>
+          <p class="small muted">Notes + Weekly Assignments</p>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Nursery to 5th ')">Choose</button></div>
+        </div>
+        <div class="price-card">
+          <h4>Class 5th-10th</h4>
+          <div class="price-amount">₹499 / month</div>
+          <p class="small muted">Tests + Materials</p>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Class 5th-10th')">Choose</button></div>
+        </div>
+        <div class="price-card">
+          <h4>Intermediate (Class 11-12)</h4>
+          <div class="price-amount">₹999 / month</div>
+          <p class="small muted">Personal Mentor + Doubt Sessions + Career Guidance</p>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Intermediate (Class 11-12)')">Choose </button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" aria-labelledby="testimonials-title" class="section">
+    <div class="container">
+      <h3 id="testimonials-title" class="section-title" data-aos="fade-up">What Students Say</h3>
+      <div class="testimonials" data-aos="fade-up">
+        <div id="test-track" class="test-track">
+          <div class="test-item card">
+            <strong>Ritu Sharma</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
+            <div class="small muted">Class 10 — 93%</div>
+            <p class="quote">"The weekly tests helped me identify weak areas quickly. Teachers explain in a simple way."</p>
+          </div>
+          <div class="test-item card">
+            <strong>Vikram Patel</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
+            <div class="small muted">Class 12 (Arts)</div>
+            <p class="quote">"Crash course before boards made a huge difference. Clear strategy, great practice."</p>
+          </div>
+          <div class="test-item card">
+            <strong>Neha Singh</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
+            <div class="small muted">Competitive Exam</div>
+            <p class="quote">"Mocks & personalized reviews improved my speed and accuracy. Highly recommended."</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:10px;justify-content:center;margin-top:14px">
+          <button class="btn-outline" id="prevTest" aria-label="Previous testimonial">‹</button>
+          <button class="btn-outline" id="nextTest" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-labelledby="faq-title" class="section">
+    <div class="container">
+      <h3 id="faq-title" class="section-title" data-aos="fade-up">Frequently Asked Questions</h3>
+      <div class="accordion" data-aos="fade-up" style="margin-top:18px">
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" aria-expanded="false">Do you provide demo classes?<span class="small muted">Yes, free demo available</span></div>
+          <div class="accordion-content">We offer a free demo class so you can evaluate the teaching style and batch before enrolling.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" aria-expanded="false">What are the batch sizes?<span class="small muted">Small & focused</span></div>
+          <div class="accordion-content">We keep batch sizes small (12-20 students) so each student gets individual attention.</div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" aria-expanded="false">Can I switch between classroom & online?<span class="small muted">Flexible</span></div>
+          <div class="accordion-content"> No — online classes are not available. Only offline mode is offered.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section aria-labelledby="blog-title" class="section">
+    <div class="container">
+      <h3 id="blog-title" class="section-title" data-aos="fade-up">Latest from Our Blog</h3>
+      <div class="section-sub" data-aos="fade-up">Study tips, exam strategies, and important notices.</div>
+      <div class="blogs" style="margin-top:18px" data-aos="fade-up">
+       <article class="blog-card card">
+  <img src="assets/Images/result1.jpg" alt="Success Story - Paramount">
+  <h4>Success Story of Paramount</h4>
+  <p class="small muted">Discover how our students achieved top BSEB results through smart strategies and dedicated guidance.</p>
+  <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
+</article>
+
+        <article class="blog-card card">
+          <img src="assets/Images/result2.jpg"  alt="blog 2">
+          <h4>How to Ace Math: Strategy & Practice</h4>
+          <p class="small muted">A simple strategy to improve speed in arithmetic & algebra problems.</p>
+          <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
+        </article>
+        <article class="blog-card card">
+          <img src="assets/Images/result3.jpg"  alt="blog 3">
+          <h4>Mock Tests — Why They Matter</h4>
+          <p class="small muted">Understand your weak points and track improvement with regular mock tests.</p>
+          <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-labelledby="contact-title" class="section">
+    <div class="container">
+      <h3 id="contact-title" class="section-title" data-aos="fade-up">Contact & Support</h3>
+      <div class="contact-grid" style="margin-top:20px" data-aos="fade-up">
+        <div class="card contact-info">
+          <h4>Contact Us</h4>
+          <p class="small muted">Paramount Coaching Centre, Near Bahadurganj Police Station</p>
+          <p style="margin-top:8px"><strong>Phone:</strong> +91 9155726625</p>
+          <p><strong>Email:</strong> paramount@gmail.com</p>
+          <h4 style="margin-top:18px">Office hours</h4>
+          <p class="small muted">Mon-Sat • 9:00 AM - 6:00 PM</p>
+        </div>
+
+        <div class="card contact-form" role="form" aria-label="Contact form">
+          <h4>Send us a message</h4>
+  <form id="contactForm" method="POST">
+  <label class="small">Name</label>
+  <input name="name" id="name" onchange="Check_Name()" required placeholder="Your name" />
+
+  <label class="small">Email</label>
+  <input name="email" id="email" type="email" onchange="Check_Email()" required placeholder="you@example.com" />
+
+  <label class="small">Mobile</label>
+  <input name="telphone" id="telphone" type="tel" maxlength="12" onchange="Check_Mob()" required placeholder="+9152********" />
+
+  <label class="small">Message</label>
+  <textarea name="message" id="message" rows="5" placeholder="How can we help?" required></textarea>
+ <span id="Error" style="font-size: 15px;"></span>
+  <div style="display:flex;gap:10px;align-items:center">
+    <button class="btn" id="formbtn" type="submit">Send Message</button>
+  </div>
+
+</form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210" id="whatsapp" class="whatsapp-float" target="_blank" title="Chat on WhatsApp"> <i class="fab fa-whatsapp"></i></a>
+<button id="topBtn" class="whatsapp-float" aria-label="Scroll to top" title="Back to top"> <img src="assets/Images/Scrolltotop.png" alt="top" style="width:28px;height:28px"></button>
+
+  <!-- use it on index.php file only -->
+  <!-- <?php  include "footer.php"?> -->
+  <footer class="footer" id="include-footer">
+<div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!4v1762818353906!6m8!1m7!1sODt1jOwfnyQEiA6Z_lnqIQ!2m2!1d26.26235563650549!2d87.82815733816258!3f312.4624358551674!4f-21.18648858191061!5f0.7820865974627469" allowfullscreen="" loading="lazy" height="100%" width="100%"></iframe></div>
+<div class="footer-div">
+
+<h2>Quick Links</h2>
+  <a href="#home"><i class="fas fa-house"></i> Home</a>
+  <a href="#about"><i class="fas fa-user-graduate"></i> About</a>
+  <a href="#results"><i class="fas fa-chart-line"></i> Results</a>
+  <a href="#materials"><i class="fas fa-book-open"></i> Materials</a>
+  <a href="#gallery"><i class="fas fa-images"></i> Gallery</a>
+  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+    <div class="footer-div">
+      <h2>Social Link</h2>
+  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-twitter"></i> Twitter
+  </a>
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook"></i> Facebook
+  </a>
+  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+    </div>
+ </footer>
+<div id="all-reserved" style="text-align:center; font-family:'Poppins', sans-serif; font-size:15px; color:#555; background:#f8f9fa; padding:10px 0; border-top:1px solid #ddd;">
+  © 2025 <strong>Paramount Coaching Centre</strong> | All Rights Reserved • <span style="color:#0078ff;">Empowering Education & Innovation</span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+  $("#formbtn").click(function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Get input values
+    var $form = $("#contactForm"); // Store form as jQuery object
+    var nameInput = $form.find("#name").val().trim();
+    var emailInput = $form.find("#email").val().trim();
+    var mobInput = $form.find("#telphone").val().trim();
+    var smsInput = $form.find("#message").val().trim();
+
+    // Validate fields
+    if(nameInput === "" || emailInput === "" || mobInput === "" || smsInput === "") {
+      $("#Error").html("All fields are required!").show();
+      return;
+    }
+
+    // AJAX call
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: {
+        name: nameInput,
+        email: emailInput,
+        telphone: mobInput,
+        message: smsInput
+      },
+      success: function (response) {
+        // Show response message
+        $("#Error").html(response).show();
+
+        // Properly reset the form
+        $form[0].reset(); // Make sure to use the DOM element, not jQuery object
+
+        // Optionally, clear focus
+        $form.find("input, textarea").blur();
+
+        // Hide message after 5 seconds
+        setTimeout(function () {
+          $("#Error").fadeOut();
+        }, 5000);
+      },
+      error: function () {
+        $("#Error").html("Something went wrong. Try again.").show();
+        setTimeout(function () {
+          $("#Error").fadeOut();
+        }, 5000);
+      }
+    });
+  });
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,14 +1,11 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
 // Include PHPMailer library files
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
-
 header('Content-Type: text/plain'); // Clean AJAX response
-
 // Database credentials
 $host = "localhost";
 $dbname = "coaching";
@@ -61,7 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $stmt = $pdo->prepare("INSERT INTO data (name, email, phone, message) VALUES (?, ?, ?, ?)");
         if ($stmt->execute([$name, $email, $phone, $message])) {
-
             // PHPMailer setup
             $mail = new PHPMailer(true);
             try {

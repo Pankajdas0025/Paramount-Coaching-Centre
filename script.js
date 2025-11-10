@@ -64,14 +64,11 @@
 
 
 
-
-
-
     // Keep loader for 3 seconds, then hide
     window.addEventListener("load", function() {
       setTimeout(function() {
         document.getElementById("loading-screen").classList.add("hidden");
-      },3000); // 3000ms = 3 seconds
+      },1000); // 3000ms = 3 seconds
     });
 
 
