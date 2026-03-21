@@ -47,18 +47,6 @@ body , html{
 {
   text-decoration: underline;
   transform: translateX(1px);
-}#All-reserved
-
-{
-  width: 100%;
- height: 10vh;
-  background-color:black;
-  justify-content: center;
-  color: white;
-  align-items: center;
-  padding: 15px 25px ;
-  text-align: center;
-
 }
 
   @media(max-width:600px)
@@ -92,11 +80,12 @@ body , html{
 {
 color: white;
 }}
+/* footer style end Here */
 </style>
 </head>
 <body>
     <footer class="footer" id="include-footer">
-<div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28665.22969122228!2d87.92639821019456!3d26.093900587226088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e516befd097303%3A0xb171e5facfa2a2d8!2sKishanganj%2C%20Bihar%20855107!5e0!3m2!1sen!2sin!4v1758648469245!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="footer-div"><iframe src="https://www.google.com/maps/embed?pb=!4v1762818353906!6m8!1m7!1sODt1jOwfnyQEiA6Z_lnqIQ!2m2!1d26.26235563650549!2d87.82815733816258!3f312.4624358551674!4f-21.18648858191061!5f0.7820865974627469" allowfullscreen="" loading="lazy" height="100%" width="100%"></iframe></div>
 <div class="footer-div">
 
 <h2>Quick Links</h2>
@@ -126,6 +115,8 @@ color: white;
   </a>
     </div>
  </footer>
- <div id="All-reserved"> All rights reserved By: Pankaj&copy; 2025</div>
+<div id="all-reserved" style="text-align:center; font-family:'Poppins', sans-serif; font-size:15px; color:#555; background:#f8f9fa; padding:10px 0; border-top:1px solid #ddd;">
+  © 2025 <strong>Paramount Coaching Centre</strong> | All Rights Reserved • <span style="color:#0078ff;">Empowering Education & Innovation</span>
+</div>
 </body>
 </html>

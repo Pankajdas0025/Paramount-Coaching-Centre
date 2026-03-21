@@ -173,11 +173,47 @@
     .contact-form input,.contact-form textarea{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e2e8f0}
 
 
-    /* Floating buttons */
+ /* Floating buttons */
 
-    #whatsapp{position:fixed;left:18px;bottom:18px;width:56px;height:56px;border-radius:999px;background:#25D366;display:grid;place-items:center;box-shadow:var(--shadow);z-index:900}
-    #topBtn{position:fixed;right:20px;bottom:18px;width:56px;height:56px;border-radius:999px;background:var(--accent);display:grid;place-items:center;box-shadow:var(--shadow);z-index:900;border:none;cursor:pointer}
+  #whatsapp{position:fixed;left:18px;bottom:18px;width:56px;height:56px;border-radius:999px;background:#25D366;display:grid;place-items:center;box-shadow:var(--shadow);z-index:900}
+  #topBtn{position:fixed;right:20px;bottom:18px;width:56px;height:56px;border-radius:999px;background:var(--accent);display:grid;place-items:center;box-shadow:var(--shadow);z-index:900;border:none;cursor:pointer}
+ .whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  animation: pulseShadow 2s infinite;
+}
+.whatsapp-float i {line-height: 60px;}
 
+/* Hover Animation */
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Keyframe for Pulsing Shadow Animation */
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
     /* utility */
     .muted{color:var(--muted)}
     .center{display:grid;place-items:center}

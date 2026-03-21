@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ABC Coaching Centre — Shaping Bright Futures</title>
-  <meta name="description" content="ABC Coaching Centre: Classroom & online coaching, practice tests, study materials, mentorship, and crash courses for school & competitive exams." />
+  <title>Paramount Coaching Centre — Shaping Bright Futures</title>
+  <meta name="description" content="Paramount Coaching Centre: Classroom & online coaching, practice tests, study materials, mentorship, and crash courses for school & competitive exams." />
   <meta name="keywords" content="coaching, tuition, study material, test series, demo class, competitive exam coaching" />
-  <meta name="author" content="ABC Coaching Centre" />
+  <meta name="author" content="Paramount Coaching Centre" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="style.css">
 
+
   <style>
+
   /* Full screen loader background */
   #loading-screen {
     position: fixed;
@@ -28,19 +30,10 @@
     transition: opacity 0.5s ease, visibility 0.5s ease;
     flex-direction: column;
   }
-
   /* Hide smoothly */
-  #loading-screen.hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
-
+  #loading-screen.hidden {opacity: 0;visibility: hidden;}
   /* Loader wrapper */
-  .loader {
-    width: 120px;
-    height: 120px;
-    position: relative;
-  }
+  .loader {width: 120px;height: 220px;position: relative; display: flex; flex-direction: column;}
 
   /* Pulse rings */
   .loader::before,
@@ -96,9 +89,13 @@
 
   /* Optional loader text */
   .loader-text {
-    margin-top: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
     font-size: 1.2rem;
     color: #004080;
     animation: fadeText 1.5s ease-in-out infinite;
@@ -112,19 +109,21 @@
 </head>
 <body>
   <!-- Splash Screen Loader -->
-  <div id="loading-screen">
+<div id="loading-screen">
   <div class="loader">
-    <img src="assets/Images/Hero-image.jpg" alt="Logo">
+
+    <div class="loader-text">Loading...</div>
+     <img src="assets/Images/Hero-image.jpg" alt="Logo">
   </div>
-  <div class="loader-text">Loading...</div>
+
 </div>
 
  <!-- Splash Screen Loader -->
 
   <header>
     <div class="brand container" style="display:flex;align-items:center;justify-content:flex-start;padding:0;">
-      <img src="assets/Images/Hero-image - Copy.jpg" alt="logo" style="width:44px;height:44px;border-radius:8px;object-fit:cover;">
-      <h1 style="margin-left:8px">XYZ Coaching Centre</h1>
+      <img src="assets/Images/Navy Gold Modern Circle Class Logo (1).png" alt="logo" style="width:80px;height:80px;border-radius:8px;object-fit:cover;">
+      <h1 style="margin-left:8px">Paramount Coaching Centre</h1>
     </div>
 
     <nav class="desktop-nav" aria-label="Main Navigation">
@@ -157,8 +156,9 @@
   <main id="home" class="hero" role="main">
     <div class="hero-inner">
       <div data-aos="fade-right">
-        <h2>आपकी तैयारी हमारी जिम्मेदारी<span style="color:var(--accent)">ABC Coaching Centre</span></h2>
-        <p>Comprehensive study materials, structured classroom & online coaching, test series, and mentorship for school & competitive exams.</p>
+        <h2>आपकी तैयारी ! हमारी जिम्मेदारी ! <br>
+        <span style="color:var(--accent)">पैरामाउंट परिवार</span></h2>
+        <p>Providing comprehensive study materials, expert classroom teaching, regular test series, and dedicated mentorship exclusively for Class 10th & 12th (BSEB) students. Our structured offline programs ensure strong fundamentals, exam readiness, and top board results.</p>
         <div class="cta-row">
           <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
           <button class="btn-outline" onclick="bookDemo()">Book Demo Class</button>
@@ -166,18 +166,20 @@
       </div>
 
       <aside class="hero-card center" data-aos="fade-left" aria-label="Quick info">
-        <div style="text-align:left;">
-          <strong>Upcoming Batches</strong>
-          <ul class="small muted" style="margin-top:8px">
+        <div style="text-align: left; background-color: #fbfaf6; min-width:100%; padding: 5px;">
+          <strong>📢 Upcoming Batches</strong>
+          <ul class="small muted" style="margin-top:8px ; list-style: none; text-align: left;padding: 0;">
             <li>Class 9-10 | Morning & Evening</li>
             <li>Class 11-12 (Science & Commerce)</li>
             <li>Crash Course - Board Exams</li>
           </ul>
-          <div style="margin-top:12px;">
-            <strong>Contact</strong>
-            <div class="small muted">+91 - XXXXXXXXXX</div>
-            <div class="small muted">info@abc-coaching.com</div>
-          </div>
+          <strong>👉Contact</strong>
+          <ul style="padding: 0;">
+             <div class="small muted">Thana road , Bahadurganj</div>
+            <div class="small muted">+91 9155726625</div>
+            <div class="small muted">paramount@gmail.com</div>
+
+          </ul>
         </div>
       </aside>
     </div>
@@ -186,7 +188,7 @@
   <!-- WHY CHOOSE US -->
   <section aria-labelledby="why-title" class="section" id="about">
     <div class="container">
-      <h3 id="why-title" class="section-title" data-aos="fade-up">Why Choose ABC Coaching?</h3>
+      <h3 id="why-title" class="section-title" data-aos="fade-up">Why Choose Paramount Coaching?</h3>
       <p class="section-sub" data-aos="fade-up">We combine experienced teachers, small batches, focused test series, and personalized mentoring to ensure every student achieves their best.</p>
 
       <div class="grid grid-3" style="margin-top:24px" data-aos="fade-up">
@@ -221,12 +223,13 @@
         <div class="step" data-aos="fade-up" data-aos-delay="100">
           <div class="num">2</div>
           <h4>Book Demo / Enroll</h4>
-          <p class="small muted">Attend a free demo or directly enroll online/offline.</p>
+          <p class="small muted">Attend a free demo or directly enroll offline.</p>
         </div>
         <div class="step" data-aos="fade-up" data-aos-delay="150">
           <div class="num">3</div>
-          <h4>Attend Classes</h4>
-          <p class="small muted">Join live classes, access study-material & take tests regularly.</p>
+         <h4>Join Classes</h4>
+<p class="small muted">Attend expert sessions, get notes, and take regular tests.</p>
+
         </div>
         <div class="step" data-aos="fade-up" data-aos-delay="200">
           <div class="num">4</div>
@@ -244,20 +247,27 @@
       <p class="section-sub" data-aos="fade-up">Tailored courses for different needs — choose what fits you best.</p>
       <div class="programs" style="margin-top:22px" data-aos="fade-up">
         <article class="card">
-          <h3>Nursery to 5th </h3>
+          <h4>Nursery to 5th </h4>
           <p class="small muted">Core concepts, chapter tests, and doubt-clearing sessions designed for strong fundamentals.</p>
           <div style="margin-top:12px"><button class="btn" onclick="enroll('School Coaching')">Enroll</button></div>
         </article>
-        <article class="card">
-          <h3>Class 5th-10th</h3>
-          <p class="small muted">Stream-wise focused coaching (Science & Commerce) to master board and entrance exams.</p>
-          <div style="margin-top:12px"><button class="btn" onclick="enroll('Class 11-12')">Enroll</button></div>
-        </article>
-        <article class="card">
-          <h3>Competitive Exam Crash</h3>
-          <p class="small muted">Focused short-burst programs for bank/SSC/railway & other state-level exams.</p>
-          <div style="margin-top:12px"><button class="btn" onclick="enroll('Crash Course')">Enroll</button></div>
-        </article>
+
+            <article class="card">
+            <h4>Class 5th-10th</h4>
+            <p class="small muted">Strong foundation classes with concept-based learning and regular tests for BSEB students.</p>
+            <div style="margin-top:12px">
+            <button class="btn" onclick="enroll('Class 5th-10th')">Enroll</button>
+            </div>
+            </article>
+
+            <article class="card">
+            <h4>Intermediate (Class 11-12)</h4>
+            <p class="small muted">BSEB-focused coaching with in-depth subject guidance and regular test practice for board success.</p>
+            <div style="margin-top:12px">
+            <button class="btn" onclick="enroll('Intermediate')">Enroll</button>
+            </div>
+            </article>
+
       </div>
     </div>
   </section>
@@ -271,17 +281,17 @@
         <div class="card" data-aos="fade-up">
           <h4>BSEB 10th — Previous Year Papers</h4>
           <p class="small muted">Download topic-wise solved papers for quick revision.</p>
-          <p style="margin-top:10px"><a href="#" download class="small">Download <i class="fas fa-download"></i></a></p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/math.pdf" download class="small">Download <i class="fas fa-download"></i></a></p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="50">
           <h4>Revision Notes — Physics</h4>
           <p class="small muted">Short & to-the-point revision sheets for every chapter.</p>
-          <p style="margin-top:10px"><a href="#" class="small">Download <i class="fas fa-download"></i></a></p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/physics.pdf" class="small">Download <i class="fas fa-download"></i></a></p>
         </div>
         <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h4>Question Bank — Mathematics</h4>
           <p class="small muted">Practice hundreds of quality questions with solutions.</p>
-          <p style="margin-top:10px"><a href="#" class="small">Download <i class="fas fa-download"></i></a></p>
+          <p style="margin-top:10px"><a href="StudyMaterial/previousyear/math.pdf" class="small">Download <i class="fas fa-download"></i></a></p>
         </div>
       </div>
     </div>
@@ -292,20 +302,17 @@
     <div class="scroll-track">
 <!-- Educational Image Gallery -->
 <!-- Same images twice for infinite loop effect -->
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Books and Study Materials">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Students Studying Together">
-<img src="https://images.unsplash.com/photo-1584697964191-3c52a9b4b9e7?w=600&h=400&fit=crop" alt="Classroom Learning">
-<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Books and Study Materials">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Students Studying Together">
-<img src="https://images.unsplash.com/photo-1584697964191-3c52a9b4b9e7?w=600&h=400&fit=crop" alt="Classroom Learning">
+<img src="assets/Images/picture1.jpg" alt="Books and Study Materials">
+<img src="assets/Images/picture2.jpg" alt="Students Studying Together">
+<img src="assets/Images/picture3.jpg" alt="Classroom Learning">
+<img src="assets/Images/picture4.jpg" alt="Books and Study Materials">
+
 
 <!-- Duplicate for smooth infinite effect -->
- <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Books and Study Materials">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Students Studying Together">
-<img src="https://images.unsplash.com/photo-1584697964191-3c52a9b4b9e7?w=600&h=400&fit=crop" alt="Classroom Learning"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600&h=400&fit=crop" alt="Books and Study Materials">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop" alt="Students Studying Together">
-<img src="https://images.unsplash.com/photo-1584697964191-3c52a9b4b9e7?w=600&h=400&fit=crop" alt="Classroom Learning">
-
+<img src="assets/Images/picture1.jpg" alt="Books and Study Materials">
+<img src="assets/Images/picture2.jpg" alt="Students Studying Together">
+<img src="assets/Images/picture3.jpg" alt="Classroom Learning">
+<img src="assets/Images/picture4.jpg" alt="Books and Study Materials">
     </div>
   </section>
 
@@ -316,22 +323,22 @@
       <p class="section-sub" data-aos="fade-up">Flexible packages for every learner. Contact for exact fee details & discounts.</p>
       <div class="pricing-grid" style="margin-top:20px" data-aos="fade-up">
         <div class="price-card">
-          <h4>Basic</h4>
-          <div class="price-amount">₹499 / month</div>
+          <h4>Nursery to 5th </h4>
+          <div class="price-amount">₹199 / month</div>
           <p class="small muted">Notes + Weekly Assignments</p>
-          <div style="margin-top:12px"><button class="btn" onclick="enroll('Basic')">Choose Basic</button></div>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Nursery to 5th ')">Choose</button></div>
         </div>
         <div class="price-card">
-          <h4>Standard</h4>
-          <div class="price-amount">₹1,299 / month</div>
-          <p class="small muted">Live Classes + Tests + Materials</p>
-          <div style="margin-top:12px"><button class="btn" onclick="enroll('Standard')">Choose Standard</button></div>
+          <h4>Class 5th-10th</h4>
+          <div class="price-amount">₹499 / month</div>
+          <p class="small muted">Tests + Materials</p>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Class 5th-10th')">Choose</button></div>
         </div>
         <div class="price-card">
-          <h4>Premium</h4>
-          <div class="price-amount">₹2,499 / month</div>
+          <h4>Intermediate (Class 11-12)</h4>
+          <div class="price-amount">₹999 / month</div>
           <p class="small muted">Personal Mentor + Doubt Sessions + Career Guidance</p>
-          <div style="margin-top:12px"><button class="btn" onclick="enroll('Premium')">Choose Premium</button></div>
+          <div style="margin-top:12px"><button class="btn" onclick="enroll('Intermediate (Class 11-12)')">Choose </button></div>
         </div>
       </div>
     </div>
@@ -344,17 +351,17 @@
       <div class="testimonials" data-aos="fade-up">
         <div id="test-track" class="test-track">
           <div class="test-item card">
-            <strong>Ritu Sharma</strong><img src="assets/Images/Hero-image.jpg" height="100" width="100" style="border-radius:20px">
+            <strong>Ritu Sharma</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
             <div class="small muted">Class 10 — 93%</div>
             <p class="quote">"The weekly tests helped me identify weak areas quickly. Teachers explain in a simple way."</p>
           </div>
           <div class="test-item card">
-            <strong>Vikram Patel</strong><img src="assets/Images/Hero-image.jpg" height="100" width="100" style="border-radius:20px">
+            <strong>Vikram Patel</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
             <div class="small muted">Class 12 (Arts)</div>
             <p class="quote">"Crash course before boards made a huge difference. Clear strategy, great practice."</p>
           </div>
           <div class="test-item card">
-            <strong>Neha Singh</strong><img src="assets/Images/Hero-image.jpg" height="100" width="100" style="border-radius:20px">
+            <strong>Neha Singh</strong><img src="assets/Images/student.jpg" height="100" width="100" style="border-radius:20px">
             <div class="small muted">Competitive Exam</div>
             <p class="quote">"Mocks & personalized reviews improved my speed and accuracy. Highly recommended."</p>
           </div>
@@ -379,11 +386,11 @@
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="button" aria-expanded="false">What are the batch sizes?<span class="small muted">Small & focused</span></div>
-          <div class="accordion-content">We keep batch sizes small (12–20 students) so each student gets individual attention.</div>
+          <div class="accordion-content">We keep batch sizes small (12-20 students) so each student gets individual attention.</div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header" role="button" aria-expanded="false">Can I switch between classroom & online?<span class="small muted">Flexible</span></div>
-          <div class="accordion-content">Yes — depending on your package and availability, you can switch to online classes if required.</div>
+          <div class="accordion-content"> No — online classes are not available. Only offline mode is offered.</div>
         </div>
       </div>
     </div>
@@ -395,20 +402,21 @@
       <h3 id="blog-title" class="section-title" data-aos="fade-up">Latest from Our Blog</h3>
       <div class="section-sub" data-aos="fade-up">Study tips, exam strategies, and important notices.</div>
       <div class="blogs" style="margin-top:18px" data-aos="fade-up">
+       <article class="blog-card card">
+  <img src="assets/Images/result1.jpg" alt="Success Story - Paramount">
+  <h4>Success Story of Paramount</h4>
+  <p class="small muted">Discover how our students achieved top BSEB results through smart strategies and dedicated guidance.</p>
+  <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
+</article>
+
         <article class="blog-card card">
-          <img src="assets/Images/blog1.jpg" alt="blog 1">
-          <h4>5 Revision Tips That Actually Work</h4>
-          <p class="small muted">Short, effective techniques to make the last 30 days of revision highly productive.</p>
-          <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
-        </article>
-        <article class="blog-card card">
-          <img src="assets/Images/blog2.jpg" alt="blog 2">
+          <img src="assets/Images/result2.jpg"  alt="blog 2">
           <h4>How to Ace Math: Strategy & Practice</h4>
           <p class="small muted">A simple strategy to improve speed in arithmetic & algebra problems.</p>
           <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
         </article>
         <article class="blog-card card">
-          <img src="assets/Images/blog3.jpg" alt="blog 3">
+          <img src="assets/Images/result3.jpg"  alt="blog 3">
           <h4>Mock Tests — Why They Matter</h4>
           <p class="small muted">Understand your weak points and track improvement with regular mock tests.</p>
           <p style="margin-top:10px"><a href="#" class="small">Read more →</a></p>
@@ -423,12 +431,12 @@
       <h3 id="contact-title" class="section-title" data-aos="fade-up">Contact & Support</h3>
       <div class="contact-grid" style="margin-top:20px" data-aos="fade-up">
         <div class="card contact-info">
-          <h4>Visit / Contact</h4>
-          <p class="small muted">ABC Coaching Centre, Near XYZ Chowk, Your City</p>
-          <p style="margin-top:8px"><strong>Phone:</strong> +91 - XXXXXXXXXX</p>
-          <p><strong>Email:</strong> info@abc-coaching.com</p>
+          <h4>Contact Us</h4>
+          <p class="small muted">Paramount Coaching Centre, Near Bahadurganj Police Station</p>
+          <p style="margin-top:8px"><strong>Phone:</strong> +91 9155726625</p>
+          <p><strong>Email:</strong> paramount@gmail.com</p>
           <h4 style="margin-top:18px">Office hours</h4>
-          <p class="small muted">Mon–Sat • 9:00 AM – 6:00 PM</p>
+          <p class="small muted">Mon-Sat • 9:00 AM - 6:00 PM</p>
         </div>
 
         <div class="card contact-form" role="form" aria-label="Contact form">
@@ -456,11 +464,11 @@
       </div>
     </div>
   </section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210" id="whatsapp" class="whatsapp-float" target="_blank" title="Chat on WhatsApp"> <i class="fab fa-whatsapp"></i></a>
+<button id="topBtn" class="whatsapp-float" aria-label="Scroll to top" title="Back to top"> <img src="assets/Images/Scrolltotop.png" alt="top" style="width:28px;height:28px"></button>
 
-  <a id="whatsapp" href="https://wa.me/91XXXXXXXXXX" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
-    <img src="assets/Images/whatsapp-logo.png" alt="WhatsApp" style="width:28px;height:28px">
-  </a>
-  <button id="topBtn" aria-label="Scroll to top" title="Back to top"> <img src="assets/Images/Scrolltotop.png" alt="top" style="width:28px;height:28px"></button>
+<!-- use it on index.php file only -->
 <?php  include "footer.php"?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
